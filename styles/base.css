@@ -11,14 +11,17 @@ h2,h3{
 }
 
 header{
-    
+    display: flex;
     background-color: rgb(49, 55, 115);
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     color: white;
     padding-bottom: 10px;
     font-family: "Crimson Text", sans-serif;
 }
-
+img{
+    padding-right: 50px;
+}
 nav a{
     display: block;
     background-color: black;
@@ -51,7 +54,7 @@ h3{
 }
 
 li{
-    display: none;
+    list-style-type: none;
     font-size: 1.3em;
 }
 
