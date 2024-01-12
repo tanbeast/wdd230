@@ -21,6 +21,7 @@ header{
 }
 img{
     padding-right: 50px;
+    width:100px;
 }
 nav a{
     display: block;
