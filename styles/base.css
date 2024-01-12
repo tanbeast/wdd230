@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
+
+h2,h3{
+    font-family: "Dancing Script", "cursive", "Georgia";
+    text-align: center;
+}
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(49, 55, 115);
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+    font-family: "Crimson Text", sans-serif;
+}
+
+nav a{
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color:  rgb(49, 55, 115);
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    border: solid black 1px;
+    margin: 15px;
+    grid-column: 1/2;
+}
+
+h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:  rgb(49, 55, 115);
+    color: white;
+}
+
+li{
+    display: none;
+    font-size: 1.3em;
+}
+
+footer{
+    background-color: rgb(49, 55, 115);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Crimson Text", sans-serif;
+}
