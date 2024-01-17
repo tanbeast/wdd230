@@ -45,7 +45,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1400px){
     main{
         grid-template-columns: 1fr, 1fr, 1fr;
     }
