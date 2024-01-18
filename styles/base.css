@@ -24,7 +24,7 @@ img{
     width:100px;
 }
 nav a{
-    display: block;
+    display: flex;
     background-color: black;
     color: white;
     text-align: center;
@@ -39,6 +39,8 @@ nav a:hover{
 main{
     display:grid;
     grid-template-columns: 1fr;
+    margin: 0, auto;
+    text-align: center;
 }
 
 .card{
@@ -65,4 +67,20 @@ footer{
     padding: 10px;
     text-align: center;
     font-family: "Crimson Text", sans-serif;
+}
+
+@media screen and (min-width: 800px){
+    main{
+
+        display:grid;
+        grid-template-columns: 2fr, 1fr; 
+    }
+    h2{
+        width:100%;    
+    }
+    #one{
+        grid-column: 1/2;
+    }
+
+    
 }
