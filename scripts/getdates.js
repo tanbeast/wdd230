@@ -11,3 +11,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Set the last modified date in the second paragraph
     document.getElementById("lastModified").innerText += lastModifiedDate.toLocaleString();
 });
+
+// for nav
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
