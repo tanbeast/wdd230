@@ -4,12 +4,10 @@ h2,h3{
     font-family: "Dancing Script", "cursive", "Georgia";
     text-align: center;
 }
-
 .content{
     max-width: 1400px;
     margin: 0 auto;
 }
-
 header{
     display: flex;
     background-color: rgb(49, 55, 115);
@@ -23,7 +21,6 @@ img{
     padding-right: 50px;
     width:100px;
 }
-
 .navigation {
 	display: flex;
 	flex-direction: column;
@@ -46,7 +43,6 @@ img{
 	color: white;
 	font-weight: 700;
 }
-
 .open li {
 	display: block;
 	width: 100%;
@@ -54,53 +50,40 @@ img{
 .open li a {
 	display: block;
 }
-
 main{
     display:grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     text-align: center;
 }
-
 #menu::before {
     content: "☰";
 }
-
 #menu.open::before {
     content: "X";
 }
-
-
 .card{
     border: solid black 1px;
     margin: 15px;
     grid-column: 1/2;
 }
-
 h3{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color:  rgb(49, 55, 115);
     color: white;
 }
-
 li{
     list-style-type: none;
     font-size: 1.3em;
     text-align: left;
 }
-
-
-
 iframe{
     
     grid-column: 1/3;
     width:90%;
     padding-left: 5%;
 }
-
-
-
 footer{
     background-color: rgb(49, 55, 115);
     color: white;
@@ -108,9 +91,7 @@ footer{
     text-align: center;
     font-family: "Crimson Text", sans-serif;
 }
-
 @media screen and (min-width: 800px){
-
     nav a:hover{
         background-color:  rgb(49, 55, 115);
     }
@@ -140,11 +121,5 @@ footer{
     #two{
         grid-column: 2/3;
         min-width: 200px;
-    }
-
-    
-
-    
+    } 
 }
-
-
