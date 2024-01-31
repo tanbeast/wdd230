@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@500&family=Playfair+Display&display=swap');
+#content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+    color: #51A3A3;
+    padding: 20px;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "X";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color:  black;;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #00d5ff;
+}
+.navigation li a:hover {
+	background-color: #8B1E3F;
+	color: white;
+	font-weight: 700;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+h2{
+    color: #8B1E3F;
+}
+#hero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+}
+
+#hero>img{
+    padding-left: 5%;
+    width: 90%;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#hero>div{
+    padding: 5%;
+    text-align: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+section{
+    border: solid black 1px;
+}
+main{
+    display: grid;
+    margin-left: 7%;
+    grid-template-columns: 60% 30%;
+}
+footer{
+    background-color: black;
+    color: #51A3A3;
+    display: flex;
+    justify-content: space-around;
+}

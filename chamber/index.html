@@ -11,22 +11,47 @@
     <meta property="og:type" content="website">
     <title>Careys Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
 </head>
-<body>
+<body id="content">
     <header>
-        <h1>Chamber of Commerce</h1>
-        <nav></nav>
-
+        
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://tanbeast.github.io/wdd230/chamber/">Home</a></li>
+                <li><a href="#">place</a></li>
+                <li><a href="#">place</a></li>
+            </ul>
+        </nav>
     </header>
+    <div id="hero">
+        <img src="images/OIP.jpg" alt="hero img">
+        <div>
+            <h1>Chamber of Commerce</h1>
+            <button>to join</button>
+        </div>
+    </div>
     <main>
-
+        <section>
+            <h2>current events</h2>
+        </section>
+        <section>
+            <h2>weather</h2>
+        </section>
+        <section>
+            <h2>company spotlight</h2>
+        </section>
     </main>
     <footer>
-
+        <p>(208)-720-9904</p>
+        <p id="copyright">&copy; </p>
+        <p>Kade O'Crowley WDD230</p>
+        <p id="lastModified">Last Modified: </p>
     </footer>
+    <script src="scripts/getdates.js" ></script>
 </body>
 </html>
