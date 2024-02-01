@@ -64,12 +64,10 @@ h2{
 }
 section{
     border: solid black 1px;
+    max-width: 90%;
+    margin-left: 5%;
 }
-main{
-    display: grid;
-    margin-left: 7%;
-    grid-template-columns: 60% 30%;
-}
+
 footer{
     background-color: black;
     color: #51A3A3;

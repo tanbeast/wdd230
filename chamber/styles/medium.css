@@ -1,0 +1,22 @@
+@media screen and (min-width: 800px){
+    nav li:hover{
+        background-color:  #8B1E3F;
+    }
+    nav li{
+        display: flex;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        justify-self: space-around;
+    }
+    .navigation li {
+        display: block;
+    }
+    #menu {
+        display: none; /* hide hamburger button */
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
