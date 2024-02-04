@@ -2,12 +2,9 @@
     nav li:hover{
         background-color:  #8B1E3F;
     }
-    nav li{
-        display: flex;
-        background-color: black;
-        color: white;
-        text-decoration: none;
-        justify-self: space-around;
+    .navigation{
+        flex-direction: row;
+       justify-content: space-around;
     }
     .navigation li {
         display: block;
