@@ -3,12 +3,21 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
 header{
     background-color: black;
     color: #51A3A3;
     padding: 20px;
 }
 #menu::before {
+    cursor: pointer;
     content: "☰";
 }
 #menu.open::before {
@@ -42,9 +51,6 @@ header{
 .open li a {
 	display: block;
 }
-h2{
-    color: #8B1E3F;
-}
 #hero{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; 
@@ -63,6 +69,7 @@ h2{
     grid-row: 1/2;
 }
 section{
+    color: #8B1E3F;
     border: solid black 1px;
     max-width: 90%;
     margin-left: 5%;
