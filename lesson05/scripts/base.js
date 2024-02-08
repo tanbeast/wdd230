@@ -9,8 +9,8 @@ button.addEventListener("click", () => {
         const deleteButton = document.createElement('button');
         li.textContent = input.value;
         deleteButton.textContent = '❌';
-        li.appendChild(deleteButton);
-        list.appendChild(li);
+        li.append(deleteButton);
+        list.append(li);
         deleteButton.addEventListener('click', function() {
             list.removeChild(li);
             input.focus()
