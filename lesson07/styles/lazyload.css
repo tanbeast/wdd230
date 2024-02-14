@@ -10,6 +10,7 @@ main{
 
 img{
     width: 100%;
+    min-height: 600px;
     background: #000;
     animation: fade 10s;
 }
