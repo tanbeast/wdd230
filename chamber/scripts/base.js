@@ -16,16 +16,21 @@ const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const hero = document.querySelector("#hero");
 const section = document.querySelectorAll("section");
+const heading = document.querySelectorAll("h1","h2");
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
 		main.style.background = "#000";
         hero.style.background = "#000";
 		section.forEach(section => {section.style.color = "#fff";});
+		section.forEach(section => {section.style.border = "1px sloid red";});
+		heading.forEach(heading => {heading.style.color = "#00d5ff";});
 		modeButton.textContent = "🔆";
 	} else {
         main.style.background = "#eee";
 		hero.style.background = "#eee";
 		section.forEach(section => {section.style.color = "#8B1E3F";});
+		section.forEach(section => {section.style.border = "1px sloid black";});
+		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
 		modeButton.textContent = "🕶️";
 	}
 });
