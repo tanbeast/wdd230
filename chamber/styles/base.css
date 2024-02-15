@@ -76,4 +76,32 @@ footer{
     color: #00d5ff;
     display: flex;
     justify-content: space-around;
+}/* for the discover page*/
+
+#discover{
+    grid-template-columns: 1fr 2fr;
+}
+#content{
+    grid-column: 2/3;
+    width: 100%;
+}
+.carey_pic{
+    width: 100%;
+    animation: fade 7s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#sidebar{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#sidebar>div{
+    border: 1px solid black;
 }

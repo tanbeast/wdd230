@@ -28,33 +28,27 @@
             </ul>
         </nav>
     </header>
-    <div id="hero">
-        <picture>
-            <source srcset="images/small-hero.webp" media="(max-width: 400px)">
-            <source srcset="images/medium-hero.webp" media="(max-width: 960px)">
-            <img src="images/large-hero.webp" alt="hero img for week 6">
-        </picture>
-        <!--<img src="images/OIP.webp" alt="hero img">-->
-        <div>
-            <h1>Careys Chamber of Commerce</h1>
-            <button>to join</button>
+    <main id="discover">
+        <div id="content">
+        <picture><img class="carey_pic" src="images/maxresdefault.webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/maxresdefault (1).webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/OIP (7).webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/image2.webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/craters-34.webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/2648_a829de98-3e3f-4c54-a197-0ba.webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/R (2).webp" alt="some image" loading="lazy" width="400px"></picture>
+        <picture><img class="carey_pic" src="images/59f299cf87e33.image.webp" alt="some image" loading="lazy" width="400px"></picture>
         </div>
-    </div>
-    <main>
-        <section>
-            <h2>current events</h2>
-            <h3>ribbon cutting at 7:00pm</h3>
-        </section>
-        <section>
-            <h2>weather</h2>
-            <h3 id="temperature">temperature: 30</h3>
-            <h3 id="windSpeed">wind speed: 10</h3>
-            <h3 id="windChill">with wind chill: </h3>
-        </section>
-        <section>
-            <h2>company spotlight</h2>
-            <h3>93 Bar & Grill</h3>
-        </section>
+        <div id="sidebar">
+            <h1 id="welcome"></h1>
+            <!-- Sidebar content will be displayed here -->
+            <div>
+                <h2>Basic Info</h2>
+                <h3>population: 700</h3>
+                <h3>elivation: 1458 m</h3>
+            </div>
+            <div class="days"></div>
+        </div>
     </main>
     <footer>
         <p>(208)-720-9904</p>
@@ -62,7 +56,9 @@
         <p>Kade O'Crowley WDD230</p>
         <p id="lastModified">Last Modified: </p>
     </footer>
+    <script src="scripts/date.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/base.js" ></script>
+    
 </body>
 </html>
