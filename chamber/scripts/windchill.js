@@ -11,16 +11,16 @@ function calculateWindChill(temperature, windSpeed) {
 }
 
 // Get temperature and wind speed elements from HTML
-var temperatureElement = document.getElementById('temperature');
-var windSpeedElement = document.getElementById('windSpeed');
-var windChillElement = document.getElementById('windChill');
+const temperatureElement = document.getElementById('temperature');
+const windSpeedElement = document.getElementById('windSpeed');
+const windChillElement = document.getElementById('windChill');
 
 // Get temperature and wind speed values from HTML elements
-var temperature = parseFloat(temperatureElement.textContent);
-var windSpeed = parseFloat(windSpeedElement.textContent);
+const temperature = parseFloat(temperatureElement.textContent);
+const windSpeed = parseFloat(windSpeedElement.textContent);
 
 // Calculate wind chill
-var windChill = calculateWindChill(temperature, windSpeed);
+const windChill = calculateWindChill(temperature, windSpeed);
 
 // Display wind chill value in HTML
 windChillElement.textContent += windChill;
