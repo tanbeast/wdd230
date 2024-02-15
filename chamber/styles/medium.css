@@ -16,4 +16,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .carey_pic:hover {
+        border-radius:50px 150px 100px;
+        opacity: 90%;
+    }
 }
