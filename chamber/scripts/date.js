@@ -23,28 +23,7 @@ if (localStorage.getItem('lastVisitDate')) {
     // If it's the first visit, display a welcome message
     document.getElementById('welcome').innerHTML = "Welcome! Let us know if you have any questions.";
 }
-//for the callander
-const daysContainer = document.querySelector('.days');
 
-const months = [
-    "January", "February", "March", "April", "May", "June", 
-    "July", "August", "September", "October", "November", "December"
-];
+// Store the current visit date in localStorage
+localStorage.setItem('lastVisitDate', new Date());
 
-const currentDate = new Date();
-const currentMonth = currentDate.getMonth();
-const currentYear = currentDate.getFullYear();
-
-const headerDiv = document.createElement('div');
-headerDiv.classList.add('header');
-headerDiv.textContent = months[currentMonth] + ' ' + currentYear;
-daysContainer.appendChild(headerDiv);
-
-const totalDays = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-for (let day = 1; day <= totalDays; day++) {
-    const dayDiv = document.createElement('div');
-    dayDiv.classList.add('day');
-    dayDiv.textContent = day;
-    daysContainer.appendChild(dayDiv);
-}
