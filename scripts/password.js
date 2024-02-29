@@ -16,3 +16,16 @@ function checkSame() {
 		kp2.style.color = "#000";
 	}
 }
+
+document.getElementById('emailForm').addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	var emailInput = document.getElementById('email').value;
+	var byuiEmailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+
+	if (byuiEmailPattern.test(emailInput)) {
+		alert('Email is valid. Proceed with submission.');
+	} else {
+		alert('Please enter a valid BYUI email address.');
+	}});
+
