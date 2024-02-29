@@ -79,6 +79,9 @@ picture>img{
     width: 90%;
     padding-left: 2%;
 }
+#temple_name{
+    background-color: antiquewhite;
+}
 #hero>p{
     position: absolute;
     border: 1px solid black;
