@@ -1,31 +1,20 @@
-const kp1 = document.querySelector("#password");
-const kp2 = document.querySelector("#password2");
+function validatePasswords() {
+	 password = document.getElementById('password').value;
+	const confirmPassword = document.getElementById('password2').value;
+	const errorMessage = document.getElementById('errorMessage');
+	const kap = document.getElementById('form');
 
-kp2.addEventListener("focusout", checkSame);
+	// Regular expression pattern for validating email addresses
+	var emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
 
-function checkSame() {
-	if (kp1.value !== kp2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.visibility = "show";
-		kp2.style.backgroundColor = "#fff0f3";
-		kp2.value = "";
-		kp2.focus();
-	} else {
-		message.style.display = "none";
-		kp2.style.backgroundColor = "#fff";
-		kp2.style.color = "#000";
-	}
-}
-
-document.getElementById('emailForm').addEventListener('submit', function(event) {
-	event.preventDefault();
-
+	// Get the email input field value
 	var emailInput = document.getElementById('email').value;
-	var byuiEmailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
 
-	if (byuiEmailPattern.test(emailInput)) {
-		alert('Email is valid. Proceed with submission.');
+	if (password !== confirmPassword || emailPattern.test(emailInput) == false) {
+		alert("Make sure your passwords are the same and you use a valid email");
 	} else {
-		alert('Please enter a valid BYUI email address.');
-	}});
+	  kap.action = "record.html"
+	  // Proceed with form submission or other actions
+	}
+  }
 

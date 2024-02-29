@@ -16,7 +16,7 @@
         <h1>Kade T. O'Crowley</h1>
     </header>
     <main>
-        <form method="get" action="record.html">
+        <form id="form" method="get" action="">
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label class="top">Username <input type="text" id="user" name="username" required></label>
@@ -39,7 +39,7 @@
                     <option value="10">10</option>
                 </datalist>
             </fieldset>
-            <input type="submit" value="Give My feedback" class="submitBtn">
+            <input type="submit" onclick="validatePasswords()" value="Give My feedback" class="submitBtn" >
         </form>
     </main>
     <footer>
