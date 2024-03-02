@@ -29,28 +29,6 @@
         </nav>
     </header>
     <main id="form_code">
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
-                <label class="top">Last Name* <input type="text" name="lname" required></label>
-                <label class="top">Title or Position* <input type="text" id="position" name="position" required pattern="[a-zA-Z -]{7,}" title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
-                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="1258295562"></label>
-                <label class="top"> business/organization* <input type="text" name="compony" id="compony" required></label>
-                <label class="top"> business/organization discription <textarea name="compony_dis" id="compony_dis" rows="5" ></textarea></label>
-                <input type="hidden" id="timestamp" name="timestamp">
-
-            </fieldset>
-            <fieldset>
-                <legend>Membership</legend>
-                <label class="sbs"><input type="radio" name="audience" value="np"> NP Membership(non profit organizations)</label>
-                <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
-                <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
-                <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
-            </fieldset>
-            <input type="submit" value="Get my Membership" class="submitBtn">
-        </form>
         <section id="memberships">
             <table>
                 <tr>
@@ -104,6 +82,29 @@
                 </tr>
               </table>
         </section>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Title or Position* <input type="text" id="position" name="position" required pattern="[a-zA-Z -]{7,}" title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1258295562"></label>
+                <label class="top"> business/organization* <input type="text" name="compony" id="compony" required></label>
+                <label class="top"> business/organization discription <textarea name="compony_dis" id="compony_dis" rows="5" ></textarea></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label class="sbs"><input type="radio" name="audience" value="np"> NP Membership(non profit organizations)</label>
+                <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+            </fieldset>
+            <input type="submit" value="Get my Membership" class="submitBtn">
+        </form>
+        
     </main>
     <footer>
         <p>(208)-720-9904</p>
