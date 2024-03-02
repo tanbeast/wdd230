@@ -136,7 +136,7 @@ footer{
     background-color: lightblue;
 }
 
-/***************** FORM *******************/
+
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
@@ -166,6 +166,7 @@ form label.top, form div{
     padding-top: 1rem;
     color:#9c2c13;
     font-size: .8rem;
+    text-align: left;
 }
 
 form label.top input, form label.top select{
@@ -198,10 +199,3 @@ form input.submitBtn{
     max-width: 20rem;
 }
 
-form label.top input:required{
-    border-left: red solid 6px;
-}
-
-form label.top input:required:valid{
-    border-left: green solid 6px;
-}

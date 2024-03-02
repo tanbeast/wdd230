@@ -1,0 +1,11 @@
+
+@media screen and (min-width: 800px){
+    #form_code{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    table td,th{
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
+}
