@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-</head>
+</head> 
 <body id="content">
     <div id="mode">🕶️</div>
     <header>
@@ -29,7 +29,81 @@
         </nav>
     </header>
     <main>
-       
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Title or Position* <input type="text" id="position" name="position" required pattern="[a-zA-Z -]{7,}" title="Please enter a valid title or position (minimum 7 characters, only alphabets, hyphens, and spaces)"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1258295562"></label>
+                <label class="top"> business/organization* <input type="text" name="compony" id="compony" required></label>
+                <label class="top"> business/organization discription <input type="text area" name="compony_dis" id="compony_dis" ></label>
+                <input type="hidden" id="timestamp" name="timestamp">
+
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label class="sbs"><input type="radio" name="audience" value="np"> NP Membership(non profit organizations)</label>
+                <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="audience" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="audience" value="gold"> Gold Membership</label>
+            </fieldset>
+            <input type="submit" value="Get my Membership" class="submitBtn">
+        </form>
+        <section id="memberships">
+            <table>
+                <tr>
+                  <th>Level</th>
+                  <th>Cost</th>
+                  <th>Benefits</th>
+                </tr>
+                <tr>
+                  <td>Non-Profit</td>
+                  <td>$50</td>
+                  <td>
+                    <ul>
+                      <li>Access to member-exclusive online resources and forums</li>
+                      <li>Quarterly newsletters with industry updates and insights</li>
+                      <li>Discounted rates on select training workshops and webinars</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bronze</td>
+                  <td>$100</td>
+                  <td>
+                    <ul>
+                      <li>All Non-Profit level benefits, plus:</li>
+                      <li>Priority listing in the organization's online directory, increasing visibility to potential clients and partners</li>
+                      <li>Invitation to exclusive networking events and mixers with fellow members and industry professionals</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Silver</td>
+                  <td>$200</td>
+                  <td>
+                    <ul>
+                      <li>All Bronze level benefits, plus:</li>
+                      <li>Featured spotlights on the organization's website homepage, showcasing member achievements and services to a broader audience</li>
+                      <li>Discounted advertising rates in the organization's newsletters and promotional materials</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gold</td>
+                  <td>$300</td>
+                  <td>
+                    <ul>
+                      <li>All Silver level benefits, plus:</li>
+                      <li>Exclusive networking opportunities with industry leaders and influencers, including private meet-and-greet sessions and networking events</li>
+                      <li>Complimentary tickets to select industry conferences and summits, providing access to valuable networking and learning opportunities</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+        </section>
     </main>
     <footer>
         <p>(208)-720-9904</p>
@@ -37,7 +111,7 @@
         <p>Kade O'Crowley WDD230</p>
         <p id="lastModified">Last Modified: </p>
     </footer>
-    <script src="scripts/windchill.js"></script>
-    <script src="scripts/base.js" ></script>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/base.js"></script>
 </body>
 </html>
