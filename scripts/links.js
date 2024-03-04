@@ -1,29 +1,10 @@
 const baseURL = "https://tanbeast.github.io/wdd230/";
 const linksURL = "https://tanbeast.github.io/wdd230/data/links.json";
 
-// Function to fetch and process the JSON data
-async function fetchLessonData() {
-    try {
-        // Fetch the JSON data from the provided URL
-        const response = await fetch(linksURL);
 
-        // Throw an error if the response status is not OK
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        // Parse the JSON data
-        const lessonData = await response.json();
-
-        // Call a function to create and populate the HTML section with lesson links
-        createLessonSection(lessonData);
-    } catch (error) {
-        console.error('Error fetching lesson data:', error);
-    }
-}
 
 // Function to create and populate the HTML section with lesson links
-function createLessonSection(lessonData) {
+function displayLinks(lessonData) {
     // Select the container where the section will be appended
     const container = document.getElementById('one');
 
@@ -66,14 +47,13 @@ function createLessonSection(lessonData) {
     container.appendChild(section);
 }
 
-// Call the function to fetch and process the JSON data
-fetchLessonData();
 
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
     //console.log(data);
-    displayLinks(data.lessons);
+    displayLinks(data);
   }
-  
+
+
   getLinks();
