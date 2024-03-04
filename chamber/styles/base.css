@@ -207,3 +207,27 @@ form input.submitBtn{
     max-width: 20rem;
 }
 
+/**/
+
+/* Style for grid view */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Style for list view */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;

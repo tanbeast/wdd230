@@ -1,0 +1,95 @@
+{
+    "members": [
+      {
+        "name": "Tech Innovations Inc.",
+        "address": "123 Tech Street, Tech City, TX 12345",
+        "phone": "555-123-4567",
+        "website": "https://www.techinnovations.com",
+        "image": "tech_innovations.png",
+        "membership_level": "Platinum",
+        "other_information": "Leading provider of cutting-edge technology solutions."
+      },
+      {
+        "name": "Green Leaf Eco-Friendly Products",
+        "address": "456 Green Avenue, Sustainability Town, CA 54321",
+        "phone": "555-987-6543",
+        "website": "https://www.greenleafproducts.com",
+        "image": "green_leaf.png",
+        "membership_level": "Gold",
+        "other_information": "Specializes in environmentally friendly products and solutions."
+      },
+      {
+        "name": "Gourmet Delights Catering",
+        "address": "789 Gourmet Boulevard, Culinary City, NY 67890",
+        "phone": "555-321-7890",
+        "website": "https://www.gourmetdelights.com",
+        "image": "gourmet_delights.png",
+        "membership_level": "Silver",
+        "other_information": "Providing exquisite catering services for special events."
+      },
+      {
+        "name": "Global Logistics Solutions",
+        "address": "1010 Logistic Lane, Shipping City, FL 24680",
+        "phone": "555-456-1234",
+        "website": "https://www.globallogisticsolutions.com",
+        "image": "global_logistics.png",
+        "membership_level": "Bronze",
+        "other_information": "Offers comprehensive logistics and supply chain management services."
+      },
+      {
+        "name": "Fashion Forward Boutique",
+        "address": "246 Style Street, Trendy Town, CA 13579",
+        "phone": "555-789-0123",
+        "website": "https://www.fashionforwardboutique.com",
+        "image": "fashion_forward.png",
+        "membership_level": "Platinum",
+        "other_information": "Your destination for the latest fashion trends and accessories."
+      },
+      {
+        "name": "Health Haven Fitness Center",
+        "address": "369 Wellness Way, Fitness City, TX 97531",
+        "phone": "555-234-5678",
+        "website": "https://www.healthhavenfitness.com",
+        "image": "health_haven.png",
+        "membership_level": "Gold",
+        "other_information": "Promoting health and wellness through state-of-the-art fitness facilities."
+      },
+      {
+        "name": "Creative Minds Advertising Agency",
+        "address": "777 Creativity Court, Marketing City, NY 86420",
+        "phone": "555-678-9012",
+        "website": "https://www.creativemindsadvertising.com",
+        "image": "creative_minds.png",
+        "membership_level": "Silver",
+        "other_information": "Innovative advertising solutions to elevate your brand."
+      },
+      {
+        "name": "Harmony Pet Care Clinic",
+        "address": "888 Pet Place, Animal Town, CA 75309",
+        "phone": "555-012-3456",
+        "website": "https://www.harmonypetcareclinic.com",
+        "image": "harmony_pet_care.png",
+        "membership_level": "Bronze",
+        "other_information": "Compassionate veterinary care for your beloved pets."
+      },
+      {
+        "name": "Adventure Seekers Travel Agency",
+        "address": "555 Wanderlust Way, Explorer City, FL 21094",
+        "phone": "555-345-6789",
+        "website": "https://www.adventureseekerstravel.com",
+        "image": "adventure_seekers.png",
+        "membership_level": "Platinum",
+        "other_information": "Embark on unforgettable journeys with personalized travel experiences."
+      },
+      {
+        "name": "Home Harmony Interior Design",
+        "address": "222 Decor Drive, Design City, TX 56789",
+        "phone": "555-890-1234",
+        "website": "https://www.homeharmonyinteriordesign.com",
+        "image": "home_harmony.png",
+        "membership_level": "Gold",
+        "other_information": "Creating stylish and functional spaces to reflect your unique style."
+      }
+    ]
+  }
+  
