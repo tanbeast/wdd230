@@ -1,0 +1,121 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson02/design",
+                    "title": "lesson 01"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson02/design-principlesn",
+                    "title": "principles"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "images/w3schools.com.png",
+                    "title": "picture"
+                },
+                {
+                    "url": "https://codepen.io/tanbeast/pen/yLwbxew",
+                    "title": "code pen"
+                },
+                {
+                    "url": "https://codepen.io/tanbeast/pen/rNRmqop",
+                    "title": "responsive menu"
+                },
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "site plan"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/tanbeast/pen/XWGeLwE",
+                    "title": "CSS"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson05/bom",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "image resized"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson06/responsive-images",
+                    "title": "responsive image"
+                }                
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson07/lazyload",
+                    "title": "Lazy Loading Activity"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson07/bom",
+                    "title": "New BOM chapters"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson08/tablebuild",
+                    "title": "table activity"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson08/form-start/",
+                    "title": "Form practice"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/form",
+                    "title": "page form"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson09/new-ward-members.json",
+                    "title": "JSON Ward"
+                },
+                {
+                    "url": "https://tanbeast.github.io/wdd230/lesson09/prophets",
+                    "title": "Prophets page"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}

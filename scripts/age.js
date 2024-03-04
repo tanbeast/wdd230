@@ -6,4 +6,4 @@ var ageDifference = currentDate - birthdate;
 // Convert the age difference to years
 var age = Math.floor(ageDifference / (1000 * 60 * 60 * 24 * 365.25));
 // Display the age on the web page
-document.getElementById('age').textContent = "Your age is: " + age + " years";
+document.getElementById('age').textContent = "My age is: " + age + " years";
