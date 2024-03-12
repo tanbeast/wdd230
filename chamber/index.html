@@ -47,8 +47,14 @@
         </section>
         <section>
             <h2>weather</h2>
-            <label>temperature</label>
-            <h3 id="temperature"> 30</h3>
+            <figure>
+                <span id="current-temp"></span>
+                <figcaption></figcaption>
+                <img id="weather-icon" src="" alt="">
+                <span id="weather-desc"></span>
+                <span id="forecast-container"></span>
+
+            </figure>
             <label>windspeed</label>
             <h3 id="windSpeed"> 10</h3>
             <h3 id="windChill">with wind chill: </h3>
@@ -64,6 +70,7 @@
         <p>Kade O'Crowley WDD230</p>
         <p id="lastModified">Last Modified: </p>
     </footer>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/base.js" ></script>
 </body>
