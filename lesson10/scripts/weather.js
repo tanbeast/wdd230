@@ -20,8 +20,7 @@ async function apiFetch() {
       // Output the results to the console for testing
       console.log(data);
       
-      // Manipulate HTML elements to display weather information
-      
+      displayResults();
     } else {
       // If response is not OK, throw an error
       throw Error(await response.text());
@@ -49,4 +48,4 @@ function displayResults(data) {
 
 // Invoke the apiFetch function
 apiFetch();
-displayResults();
+
