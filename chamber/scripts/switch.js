@@ -1,5 +1,3 @@
-
-// Function to toggle between grid and list view
 function toggleView() {
     const view = document.querySelector('input[name="view"]:checked').value;
     const container = document.getElementById('member-container');
@@ -13,6 +11,8 @@ function toggleView() {
     }
 }
 
-// Add event listener to toggle container
-document.getElementById('toggle-container').addEventListener('change', toggleView);
-
+// Add event listener to each radio input
+const radioInputs = document.querySelectorAll('input[name="view"]');
+radioInputs.forEach(input => {
+    input.addEventListener('change', toggleView);
+});

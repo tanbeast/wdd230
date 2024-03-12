@@ -1,41 +1,65 @@
+// Function to toggle between grid and list view
+function toggleView() {
+    const gridButton = document.getElementById('grid');
+    const listButton = document.getElementById('list');
+    const main = document.querySelector('main');
+
+    gridButton.addEventListener('click', () => {
+        main.classList.remove('list');
+        main.classList.add('grid');
+    });
+    
+    listButton.addEventListener('click', () => {
+        main.classList.remove('grid');
+        main.classList.add('list');
+    });
+}
+
+// Function to display member information from JSON
 async function displayMembers() {
     const response = await fetch('data/members.json');
     const data = await response.json();
-    const container = document.getElementById('member-container');
+    const main = document.querySelector('main');
 
-    // Clear existing content
-    container.innerHTML = '';
+    // Clear any existing content
+    main.innerHTML = '';
 
-    // Iterate over each member and create member cards
+    // Create a new section for the list of members
+    const article = document.createElement('article');
+    article.classList.add('list'); // Initial view is list
+
+    // Iterate over each member and create list items
     data.members.forEach(member => {
-        const card = document.createElement('div');
-        card.classList.add('member-card');
+        const section = document.createElement('section');
 
         const img = document.createElement('img');
         img.src = member.image;
         img.alt = member.name;
-        card.appendChild(img);
+        section.appendChild(img);
 
-        const name = document.createElement('h3');
-        name.textContent = member.name;
-        card.appendChild(name);
+        const h3 = document.createElement('h3');
+        h3.textContent = member.name;
+        section.appendChild(h3);
 
-        const address = document.createElement('p');
-        address.textContent = `Address: ${member.address}`;
-        card.appendChild(address);
+        const pYear = document.createElement('p');
+        pYear.textContent = member.year;
+        section.appendChild(pYear);
 
-        const phone = document.createElement('p');
-        phone.textContent = `Phone: ${member.phone}`;
-        card.appendChild(phone);
+        const a = document.createElement('a');
+        a.href = member.website;
+        a.textContent = 'Details';
+        a.target = '_blank';
+        section.appendChild(a);
 
-        const website = document.createElement('a');
-        website.href = member.website;
-        website.textContent = 'Visit Website';
-        card.appendChild(website);
-
-        container.appendChild(card);
+        article.appendChild(section);
     });
+
+    // Append the list of members to the main container
+    main.appendChild(article);
 }
 
 // Call the displayMembers function to populate the page
 displayMembers();
+
+// Call the toggleView function to enable view toggling
+toggleView();
