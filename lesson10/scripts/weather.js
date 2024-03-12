@@ -19,11 +19,7 @@ async function apiFetch() {
       
       // Output the results to the console for testing
       console.log(data);
-      
-      // Manipulate HTML elements to display weather information
-      currentTemp.textContent = data.main.temp + ' °F';
-      weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-      captionDesc.textContent = data.weather[0].description;
+      displayResults(data);
     } else {
       // If response is not OK, throw an error
       throw Error(await response.text());
@@ -35,23 +31,17 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-  currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-  // Create an empty array to store capitalized weather descriptions
-  const descriptions = [];
-  // Loop through each weather event and capitalize its description
-  data.weather.forEach((event) => {
-    // Capitalize each word of the weather description
-    const capitalizedDesc = event.description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-    descriptions.push(capitalizedDesc);
-  });
-  // Set the weather icon's source and alt attribute
-  weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
-  weatherIcon.setAttribute('alt', descriptions.join(', '));
-  // Set the caption description to display all weather descriptions
-  captionDesc.textContent = descriptions.join(', ');
+  // Capitalize each word of the weather description
+  const capitalizedDesc = data.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  captionDesc.textContent = capitalizedDesc;
+
+  // Format the temperature to show zero decimal points
+  const temp = Math.round(data.main.temp);
+  currentTemp.innerHTML = `${temp}&deg;F`;
 }
+
 
 
 // Invoke the apiFetch function
 apiFetch();
-displayResults();
+
