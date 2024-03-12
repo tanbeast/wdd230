@@ -54,3 +54,4 @@ function displayResults(data) {
 
 // Invoke the apiFetch function
 apiFetch();
+displayResults();
