@@ -1,10 +1,11 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kade O'Crowley">
-    <meta name="description"  content = " Kade O'Croelwys home page for WDD 230 - Web Frontend Development course assignment portal">
-    <meta property="og:title" content="Kades wdd 230">
+    <meta name="description" content="Kade O'Crowley's home page for WDD 230 - Web Frontend Development course assignment portal">
+    <meta property="og:title" content="Kade's WDD 230">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://tanbeast.github.io/wdd230/">
     <meta property="og:image" content="https://www.bing.com/images/search?view=detailV2&insightstoken=bcid_s7G8haf4Zo0GcQ*ccid_sbyFp%2Fhm&form=ANCMS1&iss=SBIUPLOADGET&selectedindex=0&id=-992355896&ccid=sbyFp%2Fhm&exph=600&expw=600&vt=2&sim=11">
@@ -12,7 +13,8 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="favicon.ico">
-</head><body class="content">
+</head>
+<body class="content">
     <header>
         <img src="images/myphoto.webp" alt="pic of me">
         <h1>Kade T. O'Crowley</h1>
@@ -24,29 +26,28 @@
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="chamber/">Chamber</a></li>
             <li><a href="https://my.byui.edu/ICS/" target="_blank">BYU-Idaho</a></li>
-            <li> <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng" target="_blank">Scriture</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng" target="_blank">Scripture</a></li>
         </ul>
     </nav>
-    <main><div id="hero">
-        <picture>
-            <source srcset="images/small-hero.webp" media="(max-width: 400px)">
-            <source srcset="images/medium-hero.webp" media="(max-width: 960px)">
-            <img src="images/large-hero.webp" alt="twin falls temple">
-            
-        </picture>
-        <p id="temple_name">Twin Falls Temple</p>
+    <main>
+        <div id="hero">
+            <picture>
+                <source srcset="images/small-hero.webp" media="(max-width: 400px)">
+                <source srcset="images/medium-hero.webp" media="(max-width: 960px)">
+                <img src="images/large-hero.webp" alt="Twin Falls Temple">
+            </picture>
+            <p id="temple_name">Twin Falls Temple</p>
         </div>
         <h2 id="title">WDD 230: Web Frontend Development</h2>
         <section id="one" class="card"></section>
-
         <section id="two" class="card">
-            <h3>Infomation</h3>
+            <h3>Information</h3>
             <p id="age"></p>
-            <p>wether in carey</p>
+            <p>Weather in Carey</p>
+            <p>Temperature: <span id="current-temp"></span></p>
             <figure>
-                <span id="current-temp"></span>
+                <img id="weather-icon" src="#" alt="">
                 <figcaption></figcaption>
-                <p><img id="weather-icon" src="" alt=""></p>
             </figure>
             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
@@ -59,7 +60,8 @@
     </footer>
     <script src="scripts/links.js"></script>
     <script src="scripts/age.js"></script>
-    <script src="scripts/getdates.js" ></script>
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/vistcount.js"></script>
     <script src="scripts/weather.js"></script>
-</body></html>
+</body>
+</html>

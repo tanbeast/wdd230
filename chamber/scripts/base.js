@@ -34,3 +34,34 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
+
+
+// for the button for the meet and great
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('banner');
+    const closeBannerBtn = document.getElementById('closeBanner');
+
+    // Function to check if the current day is Monday, Tuesday, or Wednesday
+    function isWeekday() {
+        const currentDate = new Date();
+        const dayOfWeek = currentDate.getDay(); // 0 for Sunday, 1 for Monday, ..., 6 for Saturday
+        return dayOfWeek >= 1 && dayOfWeek <= 3; // Monday, Tuesday, or Wednesday
+    }
+
+    // Function to show or hide the banner based on the current day
+    function toggleBanner() {
+        if (isWeekday()) {
+            banner.style.display = 'block';
+        } else {
+            banner.style.display = 'none';
+        }
+    }
+
+    // Initial check to display the banner on page load
+    toggleBanner();
+
+    // Event listener for the close button
+    closeBannerBtn.addEventListener('click', function() {
+        banner.style.display = 'none';
+    });
+});

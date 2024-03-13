@@ -1,10 +1,11 @@
 // Select HTML elements in the document
+const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
 const weatherDesc = document.querySelector('#weather-desc');
 const forecastContainer = document.querySelector('#forecast-container');
 
 // Declare a const variable named "url" and assign it a valid URL string as given in the openweathermap api documentation.
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.30&lon=-113.94&units=imperial&appid=beac1fabca8651e7bebefb4273a65d37_';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.30&lon=-113.94&units=imperial&appid=beac1fabca8651e7bebefb4273a65d37';
 
 // Define an asynchronous function named "apiFetch()" that uses a try block to handle errors.
 async function apiFetch() {
@@ -34,6 +35,7 @@ function displayResults(data) {
   // Format the current temperature to show zero decimal points
   const currentTempValue = Math.round(data.main.temp);
   currentTemp.innerHTML = `${currentTempValue}&deg;F`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
   // Display three-day temperature forecast
   const forecastData = data.daily.slice(1, 4); // Get the next 3 days forecast
