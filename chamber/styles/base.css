@@ -78,7 +78,10 @@ section{
     max-width: 90%;
     margin-left: 5%;
 }
-
+#weather-sec{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
 footer{
     background-color: black;
     color: #00d5ff;
