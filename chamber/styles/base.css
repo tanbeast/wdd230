@@ -28,7 +28,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color:  black;;
+	background-color:black;;
 }
 .navigation li {
 	display: none;

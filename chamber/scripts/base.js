@@ -34,7 +34,7 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
-
+ 
 
 // for the button for the meet and great
 document.addEventListener('DOMContentLoaded', function() {
@@ -65,3 +65,38 @@ document.addEventListener('DOMContentLoaded', function() {
         banner.style.display = 'none';
     });
 });
+
+// spotlight
+// JavaScript
+fetch('data/members.json')
+  .then(response => response.json())
+  .then(data => {
+    // Filter members with silver or gold status
+    const filteredMembers = data.members.filter(member => member.membership_level === 'Silver' || member.membership_level === 'Gold');
+
+    // Randomly select 2 to 3 members
+    const selectedMembers = [];
+    while (selectedMembers.length < Math.min(3, filteredMembers.length)) {
+      const randomIndex = Math.floor(Math.random() * filteredMembers.length);
+      const randomMember = filteredMembers[randomIndex];
+      // Ensure no duplicates
+      if (!selectedMembers.includes(randomMember)) {
+        selectedMembers.push(randomMember);
+      }
+    }
+
+    // Display selected members on the home page
+    const container = document.getElementById('spotlight-container');
+    selectedMembers.forEach(member => {
+      const memberElement = document.createElement('div');
+      memberElement.innerHTML = `
+        <h3>${member.name}</h3>
+        <p>Address: ${member.address}</p>
+        <p>Phone: ${member.phone}</p>
+        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p>Status: ${member.membership_level}</p>
+      `;
+      container.appendChild(memberElement);
+    });
+  })
+  .catch(error => console.error('Error fetching and parsing JSON:', error));

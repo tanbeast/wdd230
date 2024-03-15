@@ -37,22 +37,4 @@ function displayResults(data) {
   currentTemp.innerHTML = `${currentTempValue}&deg;F`;
   weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
-  // Display three-day temperature forecast
-  const forecastData = data.daily.slice(1, 4); // Get the next 3 days forecast
-  forecastContainer.innerHTML = ''; // Clear previous forecast data
-
-  forecastData.forEach(day => {
-    const date = new Date(day.dt * 1000);
-    const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
-    const tempMax = Math.round(day.temp.max);
-    const tempMin = Math.round(day.temp.min);
-
-    const forecastItem = document.createElement('div');
-    forecastItem.classList.add('forecast-item');
-    forecastItem.innerHTML = `
-      <div class="forecast-day">${dayOfWeek}</div>
-      <div class="forecast-temp">${tempMax}&deg;F / ${tempMin}&deg;F</div>
-    `;
-    forecastContainer.appendChild(forecastItem);
-  });
 }
