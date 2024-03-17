@@ -2,7 +2,7 @@
 function toggleView() {
     const gridButton = document.getElementById('grid');
     const listButton = document.getElementById('list');
-    const main = document.querySelector('main');
+    const main = document.getElementById('members')
 
     gridButton.addEventListener('click', () => {
         main.classList.remove('list');
@@ -19,23 +19,13 @@ function toggleView() {
 async function displayMembers() {
     const response = await fetch('data/members.json');
     const data = await response.json();
-    const main = document.querySelector('main');
-
-    // Clear any existing content
-    main.innerHTML = '';
 
     // Create a new section for the list of members
-    const article = document.createElement('article');
+    const article = document.getElementById('members')
     article.classList.add('list'); // Initial view is list
-
     // Iterate over each member and create list items
     data.members.forEach(member => {
         const section = document.createElement('section');
-
-        const img = document.createElement('img');
-        img.src = member.image;
-        img.alt = member.name;
-        section.appendChild(img);
 
         const h3 = document.createElement('h3');
         h3.textContent = member.name;

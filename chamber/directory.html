@@ -31,13 +31,10 @@
     </header>
     <main>
         <div id="toggle-container">
-            <label><input type="radio" name="view" value="grid" checked> Grid View</label>
-            <label><input type="radio" name="view" value="list"> List View</label>
+            <label><input id="grid" type="radio" name="view" value="grid" checked> Grid View</label>
+            <label><input id="list" type="radio" name="view" value="list"> List View</label>
         </div>
-        
-        <div id="member-container" class="grid-container">
-            <!-- Member cards will be dynamically inserted here -->
-        </div>
+        <article id="members"></article>
     </main>
     <footer>
         <p>(208)-720-9904</p>
@@ -47,6 +44,5 @@
     </footer>
     <script src="scripts/member.js"></script>
     <script src="scripts/base.js" ></script>
-    <script src="scripts/switch.js"></script>
 </body>
 </html>

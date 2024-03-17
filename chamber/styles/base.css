@@ -93,8 +93,15 @@ footer{
     color: #00d5ff;
     display: flex;
     justify-content: space-around;
+}
+.list{
+    grid-column: 1/4;
+}
+.grid{
+    grid-column: 1/4;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }/* for the discover page*/
-
 #discover{
     grid-template-columns: 1fr 2fr;
 }
