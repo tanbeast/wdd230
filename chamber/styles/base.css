@@ -90,6 +90,10 @@ section{
 }
 #spotlight-container{
     grid-column: 1/4;
+    
+}
+.links{
+    text-decoration: none;
 }
 footer{
     background-color: black;

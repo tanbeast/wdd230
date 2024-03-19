@@ -20,4 +20,12 @@
         border-radius:50px 150px 100px;
         opacity: 90%;
     }
+    #form_code{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    table td,th{
+        border: 1px solid #000;
+        border-collapse: collapse;
+    }
 }

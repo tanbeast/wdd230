@@ -17,27 +17,29 @@ const main = document.querySelector("main");
 const hero = document.querySelector("#hero");
 const section = document.querySelectorAll("section");
 const heading = document.querySelectorAll("h1");
-const link = document.querySelectorAll(".links");
+const headings = document.querySelectorAll("h2");
+const weblink = document.querySelectorAll(".links");
 modeButton.addEventListener("click", () => {
     //dark mode
-	if (modeButton.classList.contains("light-mode")) {	main.style.background = "#000";
+	if (modeButton.textContent.includes("🕶️")) {
+		main.style.background = "#000";
         hero.style.background = "#000";
-		link.forEach(link => {link.style.color = "#DDC824";});
+		weblink.forEach(weblink => {weblink.style.color = "#DDC824";});
 		section.forEach(section => {section.style.color = "#fff";});
 		heading.forEach(heading => {heading.style.color = "#00d5ff";});
+		headings.forEach(headings => {headings.style.color = "#00d5ff";});
 		
 		
 		modeButton.textContent = "🔆";
-		modeButton.classList.remove("light-mode");
         //light mode
 	} else {
         main.style.background = "#eee";
 		hero.style.background = "#eee";
-		link.forEach(link => {link.style.color = "#0000ee";});
+		weblink.forEach(weblink => {weblink.style.color = "#0000ee";});
 		section.forEach(section => {section.style.color = "#8B1E3F";});
 		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
+		headings.forEach(headings => {headings.style.color = "#8B1E3F";});
 		
 		modeButton.textContent = "🕶️";
-		modeButton.classList.add("light-mode");
 	}
 });
