@@ -23,20 +23,22 @@ modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🕶️")) {
 		main.style.background = "#000";
         hero.style.background = "#000";
+		link.forEach(link => {link.style.color = "#DDC824";});
 		section.forEach(section => {section.style.color = "#fff";});
 		section.forEach(section => {section.style.border = "1px sloid red";});
 		heading.forEach(heading => {heading.style.color = "#00d5ff";});
-		link.forEach(link => {link.style.color = "#DDC824";});
+		
 		
 		modeButton.textContent = "🔆";
         //light mode
 	} else {
         main.style.background = "#eee";
 		hero.style.background = "#eee";
+		link.forEach(link => {link.style.color = "#0000ee";});
 		section.forEach(section => {section.style.color = "#8B1E3F";});
 		section.forEach(section => {section.style.border = "1px sloid black";});
 		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
-		link.forEach(link => {link.style.color = "#0000ee";});
+		
 		modeButton.textContent = "🕶️";
 	}
 });
