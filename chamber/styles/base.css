@@ -88,9 +88,6 @@ section{
     font-size: 1.3rem;
     font-weight: 600;
 }
-a{
-    color:#DDC824;
-}
 #spotlight-container{
     grid-column: 1/4;
 }

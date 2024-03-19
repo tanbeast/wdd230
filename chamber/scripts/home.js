@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // spotlight
-// JavaScript
 fetch('data/members.json')
   .then(response => response.json())
   .then(data => {
@@ -55,7 +54,7 @@ fetch('data/members.json')
         <h3>${member.name}</h3>
         <p>Address: ${member.address}</p>
         <p>Phone: ${member.phone}</p>
-        <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+        <p>Website: <a href="${member.website}" target="_blank" class="links">${member.website}</a></p>
         <p>Status: ${member.membership_level}</p>
       `;
       container.appendChild(memberElement);

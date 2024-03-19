@@ -18,8 +18,9 @@ const hero = document.querySelector("#hero");
 const section = document.querySelectorAll("section");
 const text = document.querySelectorAll("div");
 const heading = document.querySelectorAll("h1");
+const link = document.querySelectorAll(".links");
 modeButton.addEventListener("click", () => {
-    //light mode
+    //dark mode
 	if (modeButton.textContent.includes("🕶️")) {
 		main.style.background = "#000";
         hero.style.background = "#000";
@@ -27,8 +28,9 @@ modeButton.addEventListener("click", () => {
 		section.forEach(section => {section.style.border = "1px sloid red";});
 		heading.forEach(heading => {heading.style.color = "#00d5ff";});
         text.forEach(text => {text.style.color = "#fff";});
+		link.forEach(link => {link.style.color = "#DDC824";});
 		modeButton.textContent = "🔆";
-        //dark mode
+        //light mode
 	} else {
         main.style.background = "#eee";
 		hero.style.background = "#eee";
@@ -36,6 +38,7 @@ modeButton.addEventListener("click", () => {
 		section.forEach(section => {section.style.border = "1px sloid black";});
 		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
         text.forEach(text => {text.style.color = "#8B1E3F";});
+		link.forEach(link => {link.style.color = "#0000ee";});
 		modeButton.textContent = "🕶️";
 	}
 });
