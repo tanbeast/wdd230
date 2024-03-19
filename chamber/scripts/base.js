@@ -25,7 +25,6 @@ modeButton.addEventListener("click", () => {
         hero.style.background = "#000";
 		link.forEach(link => {link.style.color = "#DDC824";});
 		section.forEach(section => {section.style.color = "#fff";});
-		section.forEach(section => {section.style.border = "1px sloid red";});
 		heading.forEach(heading => {heading.style.color = "#00d5ff";});
 		
 		
@@ -36,7 +35,6 @@ modeButton.addEventListener("click", () => {
 		hero.style.background = "#eee";
 		link.forEach(link => {link.style.color = "#0000ee";});
 		section.forEach(section => {section.style.color = "#8B1E3F";});
-		section.forEach(section => {section.style.border = "1px sloid black";});
 		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
 		
 		modeButton.textContent = "🕶️";
