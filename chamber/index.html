@@ -30,7 +30,12 @@
         </nav>
     </header>
     <div id="hero">
-        <img src="images/hero.webp" alt="hero img">
+        <picture>
+            <source srcset="images/hero.webp" media="(max-width: 400px)">
+            <source srcset="images/hero.webp" media="(max-width: 960px)">
+            <img src="images/hero.webp" alt="hero img">
+        </picture>
+        
         <div>
             <h1>Careys Chamber of Commerce</h1>
             <a id="link1" href="https://tanbeast.github.io/wdd230/chamber/join">to join</a>
