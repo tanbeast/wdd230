@@ -36,7 +36,7 @@ modeButton.addEventListener("click", () => {
         main.style.background = "#eee";
 		hero.style.background = "#eee";
 		weblink.forEach(weblink => {weblink.style.color = "#0000ee";});
-		section.forEach(section => {section.style.color = "#8B2E3F";});
+		section.forEach(section => {section.style.color = "#8B1E3F";});
 		heading.forEach(heading => {heading.style.color = "#8B1E3F";});
 		headings.forEach(headings => {headings.style.color = "#8B1E3F";});
 		

@@ -52,7 +52,6 @@ fetch('data/members.json')
       const memberElement = document.createElement('div');
       memberElement.innerHTML = `
         <h3>${member.name}</h3>
-        <p>Address: ${member.address}</p>
         <p>Phone: ${member.phone}</p>
         <p>Website: <a href="${member.website}" target="_blank" class="links">${member.website}</a></p>
         <p>Status: ${member.membership_level}</p>
