@@ -1,0 +1,51 @@
+/*
+colors- #303841 - #F5793B - #ffffff - #46515e - #1a1f24 - #f79a6b
+*/
+
+.content{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+#menu::before {
+	content: "☰";
+}
+#menu.open::before {
+	content: "X";
+}
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: black;
+}
+.logo{
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #F5793B;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: black;
+	font-weight: 700;
+}
+.open a {
+	display: block;
+}
