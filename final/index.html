@@ -22,6 +22,82 @@
         </nav>
     </header>
     <main>
+        <div id="message">
+            <span id="close" onclick="closeMessage()">X</span>
+            <h1>Today's high temperature: <span id="tempMax"></span>&deg;F</h1>
+        </div>
+        <div id="hero-block">
+            <img id="hero" src="images/hero.jpg" alt="hero">
+            <div id="join">
+                <a id="join-button" href="https://tanbeast.github.io/wdd230/final/reservations">Make a Reservation</a>
+            </div>
+        </div>
+        <section class="weather">
+            <div id="weather">
+                <h2>Current Weather</h2>
+                <p id="currentTemp">Loading...</p>
+                <p id="currentHumidity">Loading...</p>
+                <p id="windSpeed">Loading...</p>
+                <h2>Next Day Forecast (15:00)</h2>
+                <p id="nextDayTemp">Loading...</p>
+                <h2>Weather Details</h2>
+                <ul id="weatherDetails"></ul>
+            </div>
+        </section>
+        <section class="honda">
+            <h2>Honda Motor Scooters:</h2>
+            <div class="car">
+                <div class="card">    
+                    <h3>Honda Metropolitan (49cc):</h3>
+                    <h4>Engine: 49cc</h4>
+                    <h4>Capacity: Suitable for 1 person</h4>
+                    <h4>Description: A compact and efficient scooter ideal for navigating narrow streets and exploring the island.</h4>
+                </div>
+                <img src="images/honda-metropolitan.webp" load="lazy" class="car-img">
+                <div class="button-box">
+                    <a class="car-button" href="https://tanbeast.github.io/wdd230/final/reservations">Make a Reservation</a>
+                </div>
+            </div>
+            <div class="car">
+                <div class="card">    
+                    <h3>Honda Dio (110cc):</h3>
+                    <h4> Engine: 110cc</h4>
+                    <h4>Capacity: Suitable for 2 persons</h4>
+                    <h4> Description: A slightly larger scooter with enough power to accommodate two riders comfortably. Great for exploring the island together.</h4>
+                </div>
+                <img src="images/Honda-Dio.webp" load="lazy" class="car-img">
+                <div class="button-box">
+                    <a class="car-button" href="https://tanbeast.github.io/wdd230/final/reservations">Make a Reservation</a>
+                </div>
+            </div>
+            
+           
+            
+           Honda PCX150 (149cc):
+            Engine: 149cc
+            Capacity: Suitable for 2 persons
+            Description: A more powerful scooter designed for longer rides and carrying two passengers with ease. Perfect for exploring the island's scenic routes.
+            
+        </section>
+        <section class="side-by">
+            Side-by-Side ATVs:
+            Honda Pioneer 1000:
+            Capacity: Suitable for 4 persons
+            Description: A versatile and rugged side-by-side ATV capable of carrying up to four passengers. Ideal for off-road adventures and exploring Cozumel's interior terrain.
+           
+            
+        </section>
+        <section class="jeep">
+            Jeeps:
+            Jeep Wrangler - 4 door manual with A/C:
+            Capacity: Suitable for 5 persons
+            Description: A spacious four-door Jeep Wrangler equipped with manual transmission and air conditioning. Perfect for larger groups or families looking to explore the island comfortably.
+            Jeep Wrangler - 2 door - open air - manual:
+            Capacity: Suitable for 4 persons
+            Description: A classic two-door Jeep Wrangler with open-air capabilities and manual transmission. Ideal for smaller groups or couples seeking adventure on Cozumel's roads and trails.
+            
+        </section>
+     
     </main>
     <footer>
         <p><a href="#">Contact</a></p>
@@ -29,5 +105,6 @@
         <p><a><img src="images/instagram.png" alt="instagram"></a></p>
     </footer>
     <script src="scripts/base.js"></script>
+    <script src="scripts/home.js"></script>
 </body>
 </html>
