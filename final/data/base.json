@@ -1,0 +1,8 @@
+[
+    {"name": "Honda Metropolitan", "type": "Motor Scooter", "price": "$25/day"},
+    {"name": "Honda Dio", "type": "Motor Scooter", "price": "$30/day"},
+    {"name": "Honda PCX150", "type": "Motor Scooter", "price": "$35/day"},
+    {"name": "Honda Pioneer 1000", "type": "Side-by-Side ATV", "price": "$150/day"},
+    {"name": "Jeep Wrangler (4-door, manual with A/C)", "type": "Jeep", "price": "$100/day"},
+    {"name": "Jeep Wrangler (2-door, open air, manual)", "type": "Jeep", "price": "$90/day"}
+]

@@ -22,6 +22,72 @@
         </nav>
     </header>
     <main>
+        <div class="container">
+            <section class="rental-options">
+                <h2>Rental Options and Prices</h2>
+                <!-- Include rental options and prices from JSON data source -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rental Type</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Honda Metropolitan (49cc)</td>
+                            <td>$20 per day</td>
+                        </tr>
+                        <tr>
+                            <td>Honda Dio (110cc)</td>
+                            <td>$25 per day</td>
+                        </tr>
+                        <!-- Add more rental options here -->
+                    </tbody>
+                </table>
+            </section>
+            <section class="rental-form">
+                <h2>Rental Details</h2>
+                <form action="#" method="post">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+    
+                    <label for="period">Period:</label>
+                    <input type="text" id="period" name="period" placeholder="e.g., 1 day, 1 week, etc." required>
+    
+                    <label for="rental-type">Rental Type:</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="">Select Rental Type</option>
+                        <option value="Honda Metropolitan (49cc)">Honda Metropolitan (49cc)</option>
+                        <option value="Honda Dio (110cc)">Honda Dio (110cc)</option>
+                        <!-- Add more rental options here -->
+                    </select>
+    
+                    <label for="number">Number:</label>
+                    <input type="number" id="number" name="number" required>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="state">Home State or Country:</label>
+                    <input type="text" id="state" name="state" required>
+    
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+    
+                    <label for="comments">Special Accommodations/Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p><a href="#">Contact</a></p>
@@ -29,5 +95,6 @@
         <p><a><img src="images/instagram.png" alt="instagram"></a></p>
     </footer>
     <script src="scripts/base.js"></script>
+    
 </body>
 </html>
