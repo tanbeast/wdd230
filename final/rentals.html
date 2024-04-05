@@ -21,23 +21,39 @@
             <a class="navlink" href="https://tanbeast.github.io/wdd230/final/reservations">Reservations</a>
         </nav>
     </header>
-    <main>
+    <main class="rent">
         <h1>Rentals</h1>
-    <table id="rentalsTable">
-        <thead>
-            <tr>
-                <th>Vehicle</th>
-                <th>Type</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Data will be dynamically populated here -->
-        </tbody>
-    </table>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at the time of rental.</li>
+            <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+            <li>Fuel charge is not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is included.</li>
+            <li>Damage insurance is available for purchase.</li>
+            <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+            <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+            <li>Rentals may be returned to either physical location.</li>
+          </ul> 
+        <div class="rent">         
+        <table id="rental-table">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Half Day Price</th>
+                    <th>Full Day Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody id="rental-body">
+                <!-- Data will be populated dynamically here -->
+            </tbody>
+        </table>
+        </div>
     </main>
     <footer>
-        <p><a href="#">Contact</a></p>
+        <p><a href="#" class="me">Contact</a></p>
         <p><a><img src="images/facebook.png" alt="facebook "></a></p>
         <p><a><img src="images/instagram.png" alt="instagram"></a></p>
     </footer>

@@ -1,17 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('data/base.json')
+document.addEventListener("DOMContentLoaded", function() {
+    fetch("data/base.json")
         .then(response => response.json())
         .then(data => {
-            const tableBody = document.querySelector('#rentalsTable tbody');
-            data.forEach(vehicle => {
-                const row = document.createElement('tr');
+            const rentalTable = document.getElementById("rental-body");
+            data.rentals.forEach(rental => {
+                const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${vehicle.name}</td>
-                    <td>${vehicle.type}</td>
-                    <td>${vehicle.price}</td>
+                    <td>${rental.type}</td>
+                    <td>${rental.max_persons}</td>
+                    <td>$${rental.half_day_price}</td>
+                    <td>$${rental.full_day_price}</td>
+                    <td><img src="images/${rental.image}" alt="${rental.type}" width="100"></td>
                 `;
-                tableBody.appendChild(row);
+                rentalTable.appendChild(row);
             });
         })
-        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => console.log(error));
 });
