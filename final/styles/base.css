@@ -183,6 +183,9 @@ h2{
 .rental-form input[type="submit"]:hover {
     background-color: #555;
 }
+.contact{
+    text-align: center;
+}
 footer{
     background-color: #333;
     display: flex;
