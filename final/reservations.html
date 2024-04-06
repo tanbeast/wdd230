@@ -25,24 +25,18 @@
         <div class="container">
             <section class="rental-options">
                 <h2>Rental Options and Prices</h2>
-                <!-- Include rental options and prices from JSON data source -->
-                <table>
+                <table id="rental-table">
                     <thead>
                         <tr>
                             <th>Rental Type</th>
-                            <th>Price</th>
+                            <th>Max Persons</th>
+                            <th>Half Day Price</th>
+                            <th>Full Day Price</th>
+                            <th>Image</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Honda Metropolitan (49cc)</td>
-                            <td>$20 per day</td>
-                        </tr>
-                        <tr>
-                            <td>Honda Dio (110cc)</td>
-                            <td>$25 per day</td>
-                        </tr>
-                        <!-- Add more rental options here -->
+                    <tbody id="rental-body">
+                        <!-- Data will be populated dynamically here -->
                     </tbody>
                 </table>
             </section>
@@ -90,11 +84,12 @@
         </div>
     </main>
     <footer>
-        <p><a href="#" class="me">Contact</a></p>
+        <p><a href="https://tanbeast.github.io/wdd230/final/contact" class="me">Contact</a></p>
         <p><a><img src="images/facebook.png" alt="facebook "></a></p>
         <p><a><img src="images/instagram.png" alt="instagram"></a></p>
     </footer>
     <script src="scripts/base.js"></script>
+    <script src="scripts/rentals.js"></script>
     
 </body>
 </html>
