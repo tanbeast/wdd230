@@ -173,7 +173,6 @@ h2{
 }
 .rental-body > td, .rental-table > th{
     margin: 1rem;
-    justify-self: space-around ;
 }
 .rental-form input[type="submit"] {
     background-color: #333;
